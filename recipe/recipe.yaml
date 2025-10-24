@@ -1,0 +1,27 @@
+schema_version: 1
+
+context:
+  build_num: 0
+
+package:
+  name: m2w64-gcc
+  version: 15
+
+source:
+  path: .
+
+build:
+  number: ${{ build_num }}
+
+requirements:
+  run:
+    - gcc_win-64
+
+about:
+  summary: Backwards compatibility metapackage for GCC for m2w64 target
+  license: BSD-3-Clause
+  homepage: https://github.com/conda-forge/m2w64-gcc-feedstock
+
+extra:
+  recipe-maintainers:
+    - isuruf
