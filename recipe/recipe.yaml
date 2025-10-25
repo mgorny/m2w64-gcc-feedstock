@@ -12,6 +12,7 @@ source:
 
 build:
   number: ${{ build_num }}
+  skip: not win
 
 requirements:
   run:
